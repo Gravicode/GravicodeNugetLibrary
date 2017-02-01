@@ -31,6 +31,7 @@ namespace Microsoft.Extensions.DependencyInjection
         
         private static void AddStores(IServiceCollection services, Type userType, Type roleType,string RedisCon)
         {
+            /*
             var identityUserType = FindGenericBaseType(userType, typeof(IdentityUser));
             if (identityUserType == null)
             {
@@ -40,7 +41,7 @@ namespace Microsoft.Extensions.DependencyInjection
             if (identityRoleType == null)
             {
                 throw new InvalidOperationException("not identity role");
-            }
+            }*/
             var mgr = new PooledRedisClientManager(RedisCon);
             var client = mgr.GetClient();
             services.TryAddSingleton<IUserStore<IdentityUser>>(new UserStore<IdentityUser>(client));

@@ -5,7 +5,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
     <PackageId>Gravicode.AspNetCore.Identity.Redis</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <Authors>Mif Masterz</Authors>
     <Description>ASP.Net Core Identity provider that uses Redis</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -22,7 +22,9 @@
     <EmbeddedResource Include="**\*.resx" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="1.0.0" />
     <PackageReference Include="NETStandard.Library" Version="1.6" />
     <PackageReference Include="ServiceStack.Redis.Core" Version="1.0.33" />
   </ItemGroup>

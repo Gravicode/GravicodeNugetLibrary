@@ -19,7 +19,7 @@ Install-Package Gravicode.AspNetCore.Identity.Redis
 ```
 
 3. In
-	~/Models/ApplicationUser.cs
+
 	~/Startup.cs
 
     * Remove the namespace: Microsoft.AspNetCore.Identity.EntityFrameworkCore and Microsoft.EntityFrameworkCore
@@ -50,7 +50,16 @@ static Startup(){
         }
 }
 ```
+
 5. Delete 'Data' folder
+
+6. Delete ~/Models/ApplicationUser.cs
+
+7. Replace all class "ApplicationUser" with "IdentityUser" in ~/Controllers/AccountController.cs and ~/Controllers/ManageController.cs
+
+8. Add namespace Gravicode.AspNetCore.Identity.Redis to ~/Controllers/AccountController.cs and ~/Controllers/ManageController.cs and ~/Controllers/_ViewImports.cshtml
+
+9. Remove unnecessary namespace in ~/Controllers/AccountController.cs and ~/Controllers/ManageController.cs and ~/Controllers/_ViewImports.cshtml
 
 ## Thanks To ##
 

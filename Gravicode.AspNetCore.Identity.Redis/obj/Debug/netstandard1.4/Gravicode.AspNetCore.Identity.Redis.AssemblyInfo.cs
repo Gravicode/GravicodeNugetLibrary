@@ -11,9 +11,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Gravicode.AspNetCore.Identity.Redis")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Mif Masterz")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("Package Description")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright 2017 (c) Gravicode. All rights reserved.")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("ASP.Net Core Identity provider that uses Redis")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gravicode.AspNetCore.Identity.Redis")]
