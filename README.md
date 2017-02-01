@@ -50,6 +50,7 @@ static Startup(){
         }
 }
 ```
+5. Delete 'Data' folder
 
 ## Thanks To ##
 
