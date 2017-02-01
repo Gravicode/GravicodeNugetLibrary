@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Gravicode.AspNetCore.Identity.Redis</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Extensions.DependencyInjection.IdentityRedisBuilderExtensions">
+            <summary>
+            Contains extension methods to <see cref="T:Microsoft.AspNetCore.Identity.IdentityBuilder"/> for adding entity framework stores.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.IdentityRedisBuilderExtensions.AddRedisStores(Microsoft.AspNetCore.Identity.IdentityBuilder,System.String)">
+            <summary>
+            Adds an Entity Framework implementation of identity information stores.
+            </summary>
+            <typeparam name="TContext">The Entity Framework database context to use.</typeparam>
+            <param name="builder">The <see cref="T:Microsoft.AspNetCore.Identity.IdentityBuilder"/> instance this method extends.</param>
+            <returns>The <see cref="T:Microsoft.AspNetCore.Identity.IdentityBuilder"/> instance this method extends.</returns>
+        </member>
+        <member name="T:Gravicode.AspNetCore.Identity.Redis.IdentityRole">
+            <summary>
+            The default implementation of <see cref="T:Gravicode.AspNetCore.Identity.Redis.IdentityRole`1"/> which uses a string as the primary key.
+            </summary>
+        </member>
+        <member name="M:Gravicode.AspNetCore.Identity.Redis.IdentityRole.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:Gravicode.AspNetCore.Identity.Redis.IdentityRole"/>.
+            </summary>
+            <remarks>
+            The Id property is initialized to from a new GUID string value.
+            </remarks>
+        </member>
+        <member name="M:Gravicode.AspNetCore.Identity.Redis.IdentityRole.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of <see cref="T:Gravicode.AspNetCore.Identity.Redis.IdentityRole"/>.
+            </summary>
+            <param name="roleName">The role name.</param>
+            <remarks>
+            The Id property is initialized to from a new GUID string value.
+            </remarks>
+        </member>
+        <member name="T:Gravicode.AspNetCore.Identity.Redis.IdentityRole`1">
+            <summary>
+            Represents a role in the identity system
+            </summary>
+            <typeparam name="TKey">The type used for the primary key for the role.</typeparam>
+        </member>
+        <member name="M:Gravicode.AspNetCore.Identity.Redis.IdentityRole`1.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:Gravicode.AspNetCore.Identity.Redis.IdentityRole`1"/>.
+            </summary>
+        </member>
+        <member name="M:Gravicode.AspNetCore.Identity.Redis.IdentityRole`1.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of <see cref="T:Gravicode.AspNetCore.Identity.Redis.IdentityRole`1"/>.
+            </summary>
+            <param name="roleName">The role name.</param>
+        </member>
+        <member name="T:Gravicode.AspNetCore.Identity.Redis.IdentityRole`3">
+            <summary>
+            Represents a role in the identity system
+            </summary>
+            <typeparam name="TKey">The type used for the primary key for the role.</typeparam>
+            <typeparam name="TUserRole">The type used for user roles.</typeparam>
+            <typeparam name="TRoleClaim">The type used for role claims.</typeparam>
+        </member>
+        <member name="M:Gravicode.AspNetCore.Identity.Redis.IdentityRole`3.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:Gravicode.AspNetCore.Identity.Redis.IdentityRole`1"/>.
+            </summary>
+        </member>
+        <member name="M:Gravicode.AspNetCore.Identity.Redis.IdentityRole`3.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of <see cref="T:Gravicode.AspNetCore.Identity.Redis.IdentityRole`1"/>.
+            </summary>
+            <param name="roleName">The role name.</param>
+        </member>
+        <member name="P:Gravicode.AspNetCore.Identity.Redis.IdentityRole`3.Users">
+            <summary>
+            Navigation property for the users in this role.
+            </summary>
+        </member>
+        <member name="P:Gravicode.AspNetCore.Identity.Redis.IdentityRole`3.Claims">
+            <summary>
+            Navigation property for claims in this role.
+            </summary>
+        </member>
+        <member name="P:Gravicode.AspNetCore.Identity.Redis.IdentityRole`3.Id">
+            <summary>
+            Gets or sets the primary key for this role.
+            </summary>
+        </member>
+        <member name="P:Gravicode.AspNetCore.Identity.Redis.IdentityRole`3.Name">
+            <summary>
+            Gets or sets the name for this role.
+            </summary>
+        </member>
+        <member name="P:Gravicode.AspNetCore.Identity.Redis.IdentityRole`3.NormalizedName">
+            <summary>
+            Gets or sets the normalized name for this role.
+            </summary>
+        </member>
+        <member name="P:Gravicode.AspNetCore.Identity.Redis.IdentityRole`3.ConcurrencyStamp">
+            <summary>
+            A random value that should change whenever a role is persisted to the store
+            </summary>
+        </member>
+        <member name="M:Gravicode.AspNetCore.Identity.Redis.IdentityRole`3.ToString">
+            <summary>
+            Returns the name of the role.
+            </summary>
+            <returns>The name of the role.</returns>
+        </member>
+        <member name="T:Gravicode.AspNetCore.Identity.Redis.IdentityRoleClaim`1">
+            <summary>
+            Represents a claim that is granted to all users within a role.
+            </summary>
+            <typeparam name="TKey">The type of the primary key of the role associated with this claim.</typeparam>
+        </member>
+        <member name="P:Gravicode.AspNetCore.Identity.Redis.IdentityRoleClaim`1.Id">
+            <summary>
+            Gets or sets the identifier for this role claim.
+            </summary>
+        </member>
+        <member name="P:Gravicode.AspNetCore.Identity.Redis.IdentityRoleClaim`1.RoleId">
+            <summary>
+            Gets or sets the of the primary key of the role associated with this claim.
+            </summary>
+        </member>
+        <member name="P:Gravicode.AspNetCore.Identity.Redis.IdentityRoleClaim`1.ClaimType">
+            <summary>
+            Gets or sets the claim type for this claim.
+            </summary>
+        </member>
+        <member name="P:Gravicode.AspNetCore.Identity.Redis.IdentityRoleClaim`1.ClaimValue">
+            <summary>
+            Gets or sets the claim value for this claim.
+            </summary>
+        </member>
+        <member name="M:Gravicode.AspNetCore.Identity.Redis.IdentityRoleClaim`1.ToClaim">
+            <summary>
+            Constructs a new claim with the type and value.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gravicode.AspNetCore.Identity.Redis.IdentityRoleClaim`1.InitializeFromClaim(System.Security.Claims.Claim)">
+            <summary>
+            Initializes by copying ClaimType and ClaimValue from the other claim.
+            </summary>
+            <param name="other">The claim to initialize from.</param>
+        </member>
+        <member name="T:Gravicode.AspNetCore.Identity.Redis.IdentityUserRole`1">
+            <summary>
+            Represents the link between a user and a role.
+            </summary>
+            <typeparam name="TKey">The type of the primary key used for users and roles.</typeparam>
+        </member>
+        <member name="P:Gravicode.AspNetCore.Identity.Redis.IdentityUserRole`1.UserId">
+            <summary>
+            Gets or sets the primary key of the user that is linked to a role.
+            </summary>
+        </member>
+        <member name="P:Gravicode.AspNetCore.Identity.Redis.IdentityUserRole`1.RoleId">
+            <summary>
+            Gets or sets the primary key of the role that is linked to the user.
+            </summary>
+        </member>
+        <member name="T:Gravicode.AspNetCore.Identity.Redis.RoleStore`1">
+            <summary>
+            Creates a new instance of a persistence store for roles.
+            </summary>
+            <typeparam name="TRole">The type of the class representing a role</typeparam>
+        </member>
+    </members>
+</doc>

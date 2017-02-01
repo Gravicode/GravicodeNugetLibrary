@@ -1,0 +1,8 @@
+E:\Experiment\GravicodeNugetLibrary\Gravicode.AspNetCore.Identity.Redis\bin\Release\netstandard1.4\Gravicode.AspNetCore.Identity.Redis.deps.json
+E:\Experiment\GravicodeNugetLibrary\Gravicode.AspNetCore.Identity.Redis\bin\Release\netstandard1.4\Gravicode.AspNetCore.Identity.Redis.dll
+E:\Experiment\GravicodeNugetLibrary\Gravicode.AspNetCore.Identity.Redis\bin\Release\netstandard1.4\Gravicode.AspNetCore.Identity.Redis.pdb
+E:\Experiment\GravicodeNugetLibrary\Gravicode.AspNetCore.Identity.Redis\bin\Release\netstandard1.4\RedisIdentityDoc.xml
+E:\Experiment\GravicodeNugetLibrary\Gravicode.AspNetCore.Identity.Redis\obj\Release\netstandard1.4\Gravicode.AspNetCore.Identity.Redis.csprojResolveAssemblyReference.cache
+E:\Experiment\GravicodeNugetLibrary\Gravicode.AspNetCore.Identity.Redis\obj\Release\netstandard1.4\Gravicode.AspNetCore.Identity.Redis.AssemblyInfo.cs
+E:\Experiment\GravicodeNugetLibrary\Gravicode.AspNetCore.Identity.Redis\obj\Release\netstandard1.4\Gravicode.AspNetCore.Identity.Redis.dll
+E:\Experiment\GravicodeNugetLibrary\Gravicode.AspNetCore.Identity.Redis\obj\Release\netstandard1.4\Gravicode.AspNetCore.Identity.Redis.pdb

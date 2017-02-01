@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup Label="Configuration">
+    <DocumentationFile>RedisIdentityDoc.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <PackageId>Gravicode.AspNetCore.Identity.Redis</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Mif Masterz</Authors>
+    <Description>ASP.Net Core Identity provider that uses Redis</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <Copyright>Copyright 2017 (c) Gravicode. All rights reserved.</Copyright>
+    <PackageTags>identity redis aspnetcore.identity.redis</PackageTags>
+    <owners>Mif Masterz</owners>
+    <projectUrl>https://github.com/Gravicode/GravicodeNugetLibrary</projectUrl>
+    <iconUrl>https://cdn4.iconfinder.com/data/icons/redis-2/1451/Untitled-2-48.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="**\*.cs" />
+    <EmbeddedResource Include="**\*.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="1.1.0" />
+    <PackageReference Include="NETStandard.Library" Version="1.6" />
+    <PackageReference Include="ServiceStack.Redis.Core" Version="1.0.33" />
+  </ItemGroup>
+</Project>
