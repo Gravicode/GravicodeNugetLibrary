@@ -55,7 +55,7 @@ static Startup(){
 
 6. Delete ~/Models/ApplicationUser.cs
 
-7. Replace all class "ApplicationUser" with "IdentityUser" in ~/Controllers/AccountController.cs and ~/Controllers/ManageController.cs
+7. Replace all class "ApplicationUser" with "IdentityUser" in all files
 
 8. Add namespace Gravicode.AspNetCore.Identity.Redis to ~/Controllers/AccountController.cs and ~/Controllers/ManageController.cs and ~/Controllers/_ViewImports.cshtml
 
